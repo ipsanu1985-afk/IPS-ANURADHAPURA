@@ -1,0 +1,319 @@
+
+<!doctype html>
+<html lang="si">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>IPS-ANURADHAPURA</title>
+
+<link rel="stylesheet" href="style.css">
+
+<style>
+/* =========================
+   OUR CLASSES TITLE
+========================= */
+
+.classes-title {
+    text-align: center;
+    padding: 65px 20px 45px;
+}
+
+.classes-title .eyebrow {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.classes-title h1 {
+    font-size: 52px;
+    margin: 0;
+    line-height: 1.2;
+}
+
+.classes-title h1 span {
+    font-size: 58px;
+}
+
+.english-title {
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 4px;
+    margin-top: 14px;
+}
+
+
+/* =========================
+   CLASS CARDS
+========================= */
+
+.classes-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px 60px;
+}
+
+.detail {
+    padding: 35px;
+    border: 2px solid currentColor;
+    border-radius: 20px;
+    margin-bottom: 30px;
+}
+
+.detail small {
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.detail h2 {
+    font-size: 34px;
+    margin: 10px 0 15px;
+}
+
+.detail p {
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+.detail ul {
+    margin: 20px 0;
+    padding-left: 25px;
+}
+
+.detail li {
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+
+
+/* =========================
+   BUTTON
+========================= */
+
+.detail .btn {
+    display: inline-block;
+    padding: 12px 25px;
+    border: 2px solid currentColor;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.detail .btn:hover {
+    transform: translateY(-2px);
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+    .classes-title {
+        padding: 45px 15px 30px;
+    }
+
+    .classes-title .eyebrow {
+        font-size: 18px;
+    }
+
+    .classes-title h1 {
+        font-size: 36px;
+    }
+
+    .classes-title h1 span {
+        font-size: 40px;
+    }
+
+    .english-title {
+        font-size: 22px;
+        letter-spacing: 3px;
+    }
+
+    .detail {
+        padding: 25px 20px;
+    }
+
+    .detail h2 {
+        font-size: 28px;
+    }
+
+    .detail p {
+        font-size: 16px;
+    }
+
+    .detail li {
+        font-size: 16px;
+    }
+}
+</style>
+
+</head>
+
+<body>
+
+
+<!-- =========================
+     HEADER
+========================= -->
+
+<header>
+
+<a class="logo" href="index.html">
+<img src="images/ips-logo.jpg">
+IPS-ANURADHAPURA
+</a>
+
+<nav id="nav">
+
+<a href="index.html">Home</a>
+
+<a href="classes.html">Classes</a>
+
+<a href="teachers.html">Teachers</a>
+
+<a href="notices.html">Notice</a>
+
+<a href="contact.html">Contact Us</a>
+
+</nav>
+
+
+<div class="actions">
+
+<a href="register.html">Register</a>
+
+<a href="login.html">Login</a>
+
+<button id="themeToggle">☀ / ◐</button>
+
+<button class="menu" onclick="toggleMenu()">☰</button>
+
+</div>
+
+</header>
+
+
+
+<!-- =========================
+     MAIN
+========================= -->
+
+<main>
+
+
+<!-- OUR CLASSES TITLE -->
+
+<section class="classes-title">
+
+<p class="eyebrow"></p>
+
+<h1>
+OUR <span>CLASSES</span>
+</h1>
+
+<div class="english-title">
+RANK එකට BRAND එක
+</div>
+
+</section>
+
+
+
+<!-- =========================
+     CLASSES
+========================= -->
+
+<section class="classes-container">
+
+
+<!-- BANKING -->
+
+<article class="detail" id="banking">
+
+<small>BANKING</small>
+
+<h2>බැංකුකරණය</h2>
+
+<p>
+Banking සඳහා හොඳම IPS-ANURADHAPURA.
+</p>
+
+<ul>
+
+<li>විෂය කරුණු පැහැදිලි කිරීම</li>
+
+<li>ප්‍රශ්න සාකච්ඡා</li>
+
+<li>විභාග සූදානම</li>
+
+<li>අධ්‍යයන ද්‍රව්‍ය</li>
+
+</ul>
+
+<a class="btn" href="register.html">
+ලියාපදිංචි වන්න
+</a>
+
+</article>
+
+
+
+<!-- A/L ECON -->
+
+<article class="detail" id="alecon">
+
+<small>A/L ECON</small>
+
+<h2>ජීවිතයට ECON</h2>
+
+<p>
+උසස් පෙළ A/L මට්ටමෙන් ඉගෙන ගන්න.
+ඔබේ අනාගතයට වටිනා දැනුමක් ලබාගන්න අප හා සම්බන්ධ වන්න.
+</p>
+
+<ul>
+
+<li>මූලික සංකල්ප</li>
+
+<li>ප්‍රශ්න හා පිළිතුරු</li>
+
+<li>විභාග ක්‍රමවේදය</li>
+
+<li>අධ්‍යයන ද්‍රව්‍ය</li>
+
+</ul>
+
+<a class="btn" href="register.html">
+ලියාපදිංචි වන්න
+</a>
+
+</article>
+
+
+</section>
+
+</main>
+
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer>
+
+© <span id="year"></span> IPS-ANURADHAPURA
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
+

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="si"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>IPS-ANURADHAPURA</title><link rel="stylesheet" href="style.css"></head>
+<body>
+<header><a class="logo" href="index.html"><img src="images/ips-logo.jpg">IPS-ANURADHAPURA</a><nav id="nav">
+<a href="index.html">Home</a>
+<a href="classes.html">Classes</a>
+<a href="teachers.html">Teachers</a>
+<a href="notices.html">Notice</a>
+<a href="contact.html">Contact Us</a>
+</nav>
+<div class="actions">
+<a href="register.html">Register</a>
+<a href="login.html">Login</a>
+<button id="themeToggle">☀ / ◐</button>
+<button class="menu" onclick="toggleMenu()">☰</button>
+</div></header>
+<main><section class="form-page"><div class="form-intro"><p class="eyebrow">ශිෂ්‍ය ගිණුම</p><h1>ලියාපදිංචි <span>වන්න</span></h1><p>ඔබගේ ශිෂ්‍ය ගිණුම සාදා පන්ති තොරතුරු වෙත පහසුවෙන් ප්‍රවේශ වන්න.</p></div>
+<form id="registerForm" class="form-box">
+<label>සම්පූර්ණ නම<input id="regName" type="text" required placeholder="ඔබගේ නම"></label>
+<label>දුරකථන අංකය<input id="regPhone" type="tel" required placeholder="07XXXXXXXX"></label>
+<label>විද්‍යුත් තැපෑල<input id="regEmail" type="email" required placeholder="example@email.com"></label>
+<label>පන්තිය<select id="regClass" required><option value="">පන්තිය තෝරන්න</option><option>බැංකුකරණය</option><option>A/L ආර්ථික විද්‍යාව</option></select></label>
+<label>මුරපදය<input id="regPassword" type="password" required minlength="4" placeholder="මුරපදය"></label>
+<label>මුරපදය නැවත ඇතුළත් කරන්න<input id="regConfirm" type="password" required minlength="4" placeholder="මුරපදය තහවුරු කරන්න"></label>
+<button class="btn full" type="submit">ලියාපදිංචි වන්න</button>
+<p class="form-message" id="registerMessage"></p><p class="switch">දැනටමත් ගිණුමක් තිබේද? <a href="login.html">ඇතුල් වන්න</a></p>
+</form></section></main><footer><p>© <span id="year"></span> IPS-ANURADHAPURA.</p></footer><script src="script.js"></script></body></html>

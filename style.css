@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&family=Noto+Sans+Sinhala:wght@400;600;700&display=swap");:root{--bg:#050607;--panel:#0b0e11;--text:#f5f5f5;--muted:#8b9299;--line:#293038}body.light{--bg:#f5f5f5;--panel:#fff;--text:#111;--muted:#60656b;--line:#cdd1d5}*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,"Noto Sans Sinhala",sans-serif;line-height:1.7;transition:.3s}a{color:inherit;text-decoration:none}header{position:sticky;top:0;z-index:9;display:flex;align-items:center;gap:18px;padding:12px 5%;background:var(--bg);border-bottom:1px solid var(--line)}.logo{display:flex;align-items:center;gap:9px;font-weight:800;letter-spacing:1px}.logo img{width:45px;height:34px;object-fit:contain;filter:grayscale(1) brightness(2)}nav{display:flex;gap:18px;margin-left:auto}nav a,.actions a{font-size:12px;color:var(--muted)}nav a:hover,nav .active{color:var(--text)}.actions{display:flex;gap:7px;align-items:center}.actions a{border:1px solid var(--line);padding:6px 9px}.actions a:first-child{background:var(--text);color:var(--bg)}button{background:var(--panel);color:var(--text);border:1px solid var(--line);padding:6px 9px;border-radius:20px;cursor:pointer}.menu{display:none;border-radius:3px;font-size:18px}.hero{min-height:calc(100vh - 60px);display:grid;grid-template-columns:1.2fr .8fr;align-items:center;gap:50px;padding:70px 8%}.eyebrow{font-size:10px;letter-spacing:3px;color:var(--muted);font-weight:700}.hero h1,.page h1{font-size:clamp(42px,7vw,80px);line-height:1.05;margin:10px 0}.hero h1 span,h1 span,h2 span{color:var(--muted)}.hero h2{font-size:clamp(21px,3vw,31px);margin:20px 0 6px}.muted,p{color:var(--muted)}.contact{margin-top:22px}.contact strong{font-size:18px;color:var(--text)}.contact a{border:1px solid #495;padding:4px 8px;border-radius:20px;font-size:11px}.buttons{display:flex;gap:10px;margin-top:25px}.btn{display:inline-block;background:var(--text);color:var(--bg);border:1px solid var(--text);padding:10px 18px;font-size:12px;font-weight:700}.btn.outline{background:transparent;color:var(--text);border-color:var(--line)}.teacher{text-align:center}.teacher-photo{height:470px;max-width:370px;margin:auto;border:1px solid var(--line);padding:9px}.teacher-photo img{width:100%;height:100%;object-fit:cover;object-position:center top}.teacher small{color:var(--muted)}.section{padding:75px 8%}.grid{display:grid;gap:15px}.grid.four{grid-template-columns:repeat(4,1fr)}.grid.two{grid-template-columns:repeat(2,1fr)}.grid.three{grid-template-columns:repeat(3,1fr)}article,.detail{border:1px solid var(--line);background:var(--panel);padding:28px;transition:.25s}article:hover{border-color:var(--text);transform:translateY(-3px)}article h3{margin-bottom:4px}.quote{margin:0 8%;padding:45px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.cta{text-align:center;padding:80px 8%}.page{padding:80px 8% 35px;border-bottom:1px solid var(--line)}.detail{max-width:850px}.detail li{color:var(--muted);border-bottom:1px solid var(--line);padding:8px}.teacher-card{padding:12px}.teacher-placeholder{height:240px;border:1px dashed #555;display:grid;place-items:center;text-align:center;color:var(--muted);font-size:11px}.notice{display:grid;grid-template-columns:60px 1fr;max-width:900px;margin-bottom:10px}.notice>b{border-right:1px solid var(--line)}footer{text-align:center;border-top:1px solid var(--line);padding:22px;color:var(--muted);font-size:10px}@media(max-width:950px){nav{gap:10px}.grid.four{grid-template-columns:repeat(2,1fr)}}@media(max-width:750px){header{flex-wrap:wrap}.menu{display:block}nav{display:none;position:absolute;top:59px;left:0;right:0;background:var(--bg);padding:20px 6%;flex-direction:column}nav.open{display:flex}.actions a{display:none}.hero{grid-template-columns:1fr;padding:55px 7%}.teacher{justify-self:start}.teacher-photo{height:390px;width:80vw}.section{padding:60px 7%}.grid.four,.grid.two,.grid.three{grid-template-columns:1fr}.page{padding:60px 7% 30px}.quote{margin:0 7%}.logo{font-size:12px}}
+/* ===== Responsive PC / Tablet / Phone ===== */
+@media (min-width:1200px){
+  .hero{padding-left:9%;padding-right:9%;gap:70px}
+  .hero-content{max-width:760px}
+}
+@media (max-width:1100px) and (min-width:751px){
+  header{padding-left:4%;padding-right:4%}
+  .logo{font-size:12px}
+  nav{gap:12px}
+  .actions a{padding:5px 7px;font-size:11px}
+  .hero{padding:55px 6%;gap:30px}
+  .teacher-photo{height:420px}
+  .section{padding-left:6%;padding-right:6%}
+}
+@media (max-width:750px){
+  body{overflow-x:hidden}
+  header{min-height:58px;padding:10px 4%;gap:8px}
+  .logo{min-width:0;flex:1;overflow:hidden;text-overflow:ellipsis}
+  .logo img{width:42px;height:31px;flex:none}
+  .logo{font-size:11px;letter-spacing:.7px}
+  .actions{gap:5px}
+  #themeToggle{font-size:10px;padding:6px 8px}
+  .menu{display:block}
+  nav{top:58px;padding:16px 6%;gap:0}
+  nav a{width:100%;padding:9px 0;border-bottom:1px solid var(--line);font-size:13px}
+  .hero{min-height:auto;padding:48px 6% 60px;display:flex;flex-direction:column;align-items:stretch;gap:40px}
+  .hero h1{font-size:clamp(38px,13vw,58px);letter-spacing:-2px}
+  .hero h2{font-size:23px}
+  .hero-sub{font-size:13px}
+  .buttons{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+  .btn{text-align:center;padding:11px 8px}
+  .teacher{width:100%}
+  .teacher-photo{width:100%;max-width:360px;height:390px}
+  .teacher h3{font-size:18px}
+  .section{padding:55px 6%}
+  .section h2{font-size:28px}
+  .grid{gap:10px}
+  article{padding:21px}
+  .grid.four,.grid.two,.grid.three{grid-template-columns:1fr}
+  .page{padding:55px 6% 30px}
+  .page h1{font-size:42px}
+  .detail{padding:22px}
+  .detail h2{font-size:30px}
+  .quote{margin:0 6%;padding:35px 0}
+  .quote h2{font-size:25px}
+  .cta{padding:60px 6%}
+  .cta h2{font-size:26px}
+  .notice{grid-template-columns:45px 1fr}
+  .teacher-placeholder{height:220px}
+  footer{padding:18px 6%}
+}
+@media (max-width:390px){
+  .logo{font-size:10px}
+  .hero h1{font-size:36px}
+  .hero h2{font-size:20px}
+  .buttons{grid-template-columns:1fr}
+  .teacher-photo{height:350px}
+  .contact strong{font-size:16px}
+  #themeToggle{font-size:9px}
+}
+
+/* ===== Banking teacher profiles ===== */
+.teacher-image{
+  width:100%;
+  aspect-ratio:1.32/1;
+  overflow:hidden;
+  background:#eef2f5;
+  border:1px solid var(--line);
+  margin-bottom:14px;
+}
+.teacher-image img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:center;
+}
+.teacher-card h3{
+  font-size:19px;
+  margin:6px 0 8px;
+}
+.qualification-label{
+  font-size:10px;
+  text-transform:uppercase;
+  letter-spacing:2px;
+  color:var(--muted);
+  font-weight:700;
+  margin:4px 0 6px;
+}
+.qualification-image{
+  display:block;
+  width:100%;
+  height:54px;
+  object-fit:contain;
+  object-position:left center;
+  background:transparent;
+}
+@media(max-width:750px){
+  .teacher-image{aspect-ratio:1.32/1}
+  .qualification-image{height:58px}
+}

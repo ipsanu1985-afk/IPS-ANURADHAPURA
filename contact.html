@@ -1,0 +1,383 @@
+
+<!doctype html>
+<html lang="si">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>IPS-ANURADHAPURA</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* PAGE TITLE */
+        .page {
+            text-align: center;
+            padding: 45px 20px 25px;
+        }
+
+        .page .eyebrow {
+            font-size: 22px;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+
+        .page h1 {
+            font-size: 30px;
+            margin: 0;
+        }
+
+        .page h1 span {
+            font-size: 34px;
+        }
+
+
+        /* CONTACT SECTION */
+        .contact-section {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 25px 20px 20px;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 22px;
+            max-width: 680px;
+            margin: 0 auto;
+        }
+
+        .contact-card {
+            text-align: center;
+            padding: 30px 20px;
+            border: 2px solid currentColor;
+            border-radius: 20px;
+            transition: 0.3s ease;
+        }
+
+        .contact-card:hover {
+            transform: translateY(-4px);
+        }
+
+        .contact-card h3 {
+            font-size: 17px;
+            margin: 0 0 12px;
+        }
+
+        .contact-card h2 {
+            font-size: 28px;
+            margin: 8px 0 20px;
+        }
+
+        .contact-card .btn {
+            display: inline-block;
+            padding: 11px 25px;
+            border: 2px solid currentColor;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: 0.3s ease;
+        }
+
+        .contact-card .btn:hover {
+            transform: translateY(-2px);
+        }
+
+
+        /* WHATSAPP GROUP TITLE */
+        .groups-title {
+            text-align: center;
+            margin: 45px 0 25px;
+        }
+
+        .groups-title h2 {
+            font-size: 30px;
+            margin: 0;
+        }
+
+        .groups-title p {
+            font-size: 16px;
+            margin-top: 8px;
+        }
+
+
+        /* WHATSAPP GROUP CARDS */
+        .group-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 22px;
+        }
+
+        .group-card {
+            text-align: center;
+            padding: 28px 20px;
+            border: 2px solid currentColor;
+            border-radius: 20px;
+            transition: 0.3s ease;
+        }
+
+        .group-card:hover {
+            transform: translateY(-4px);
+        }
+
+        .group-card h3 {
+            font-size: 21px;
+            margin: 0 0 18px;
+        }
+
+        .group-card .btn {
+            display: inline-block;
+            padding: 11px 22px;
+            border: 2px solid currentColor;
+            border-radius: 12px;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+
+        /* IPS NAME */
+        .ips-name {
+            text-align: center;
+            font-size: 24px;
+            font-weight: 700;
+            margin: 45px 0 35px;
+        }
+
+
+        /* MOBILE */
+        @media (max-width: 700px) {
+
+            .page {
+                padding: 35px 15px 20px;
+            }
+
+            .page .eyebrow {
+                font-size: 19px;
+            }
+
+            .page h1 {
+                font-size: 27px;
+            }
+
+            .page h1 span {
+                font-size: 31px;
+            }
+
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .group-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-card h2 {
+                font-size: 26px;
+            }
+
+            .groups-title h2 {
+                font-size: 26px;
+            }
+
+            .ips-name {
+                font-size: 21px;
+            }
+        }
+    </style>
+</head>
+
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+
+        <a class="logo" href="index.html">
+            <img src="images/ips-logo.jpg">
+            IPS-ANURADHAPURA
+        </a>
+
+        <nav id="nav">
+            <a href="index.html">Home</a>
+            <a href="classes.html">Classes</a>
+            <a href="teachers.html">Teachers</a>
+            <a href="notices.html">Notice</a>
+            <a href="contact.html">Contact Us</a>
+        </nav>
+
+        <div class="actions">
+
+            <a href="register.html">Register</a>
+
+            <a href="login.html">Login</a>
+
+            <button id="themeToggle">
+                ☀ / ◐
+            </button>
+
+            <button class="menu" onclick="toggleMenu()">
+                ☰
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <!-- MAIN -->
+    <main>
+
+        <!-- PAGE TITLE -->
+        <section class="page">
+
+            <p class="eyebrow">
+                සම්බන්ධ වන්න
+            </p>
+
+            <h1>
+                අපව <span>අමතන්න</span>
+            </h1>
+
+        </section>
+
+
+        <!-- CONTACT -->
+        <section class="contact-section">
+
+            <div class="contact-grid">
+
+                <!-- PHONE -->
+                <article class="contact-card">
+
+                    <h3>
+                        ☎ වැඩිදුර විස්තර සඳහා
+                    </h3>
+
+                    <h2>
+                        070 128 18 58
+                    </h2>
+
+                    <a
+                        class="btn"
+                        href="tel:+94701281858">
+                        අමතන්න
+                    </a>
+
+                </article>
+
+
+                <!-- WHATSAPP -->
+                <article class="contact-card">
+
+                    <h3>
+                        WhatsApp
+                    </h3>
+
+                    <h2>
+                        070 128 18 58
+                    </h2>
+
+                    <a
+                        class="btn"
+                        href="https://wa.me/94701281858"
+                        target="_blank">
+                        WhatsApp
+                    </a>
+
+                </article>
+
+            </div>
+
+
+            <!-- WHATSAPP GROUPS -->
+            <div class="groups-title">
+
+                <h2>
+                    WhatsApp Groups
+                </h2>
+
+                <p>
+                    අපගේ WhatsApp Group සමඟ සම්බන්ධ වන්න
+                </p>
+
+            </div>
+
+
+            <div class="group-grid">
+
+                <!-- BANKING -->
+                <article class="group-card">
+
+                    <h3>
+                        BANKING GROUP
+                    </h3>
+
+                    <a
+                        class="btn"
+                        href="https://chat.whatsapp.com/XXXXXXXXXX"
+                        target="_blank">
+                        Join Group
+                    </a>
+
+                </article>
+
+
+                <!-- DBF -->
+                <article class="group-card">
+
+                    <h3>
+                        DBF GROUP
+                    </h3>
+
+                    <a
+                        class="btn"
+                        href="https://chat.whatsapp.com/XXXXXXXXXX"
+                        target="_blank">
+                        Join Group
+                    </a>
+
+                </article>
+
+
+                <!-- HDBF -->
+                <article class="group-card">
+
+                    <h3>
+                        HDBF GROUP
+                    </h3>
+
+                    <a
+                        class="btn"
+                        href="https://chat.whatsapp.com/XXXXXXXXXX"
+                        target="_blank">
+                        Join Group
+                    </a>
+
+                </article>
+
+            </div>
+
+
+            <!-- IPS NAME -->
+            <div class="ips-name">
+                IPS-ANURADHAPURA
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer>
+        © <span id="year"></span> IPS-ANURADHAPURA
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
+
